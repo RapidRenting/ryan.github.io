@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me – Ryan Fleming</title>
-  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    :root {
+      --burgundy: #800020;
+      --light-bg: #f8f6f5;
+      --text-dark: #2c2c2c;
+      --text-muted: #5a5a5a;
+      --link-hover: #a83250;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-bg);
+      margin: 0;
+      padding: 0;
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--burgundy);
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+
+    a.back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      color: var(--burgundy);
+      font-weight: bold;
+    }
+
+    a.back-link:hover {
+      color: var(--link-hover);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>About Me</h1>
-  <p>I'm a fourth-year Economics student... (expanded content)</p>
-  <a href="/">← Back to Home</a>
+  <header>
+    <h1>About Me</h1>
+  </header>
+  <main>
+    <p>
+      Text here. 
+
+    <p>
+      My research interests include immigration economics, income inequality, and evidence-based policy development. I’m currently working on a capstone project analyzing immigrant wage gaps using the Labour Force Survey and Census data.
+    </p>
+
+    <a href="/" class="back-link">← Back to Home</a>
+  </main>
 </body>
 </html>
